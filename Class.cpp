@@ -5,6 +5,8 @@
 #include "Class.h"
 #include <string>
 
+using namespace std;
+
 Class::Class(string uc,int day,int StartTime,int r,int dur) {
     week_day = day;
     starting_time = StartTime;
