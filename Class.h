@@ -14,7 +14,6 @@ private:
     int room;
     int duration;
     std::string uni_c;
-    int maluco;
 
 public:
     Class(string uc, int day, int StartTime, int r, int dur);
