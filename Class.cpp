@@ -5,9 +5,8 @@
 #include "Class.h"
 #include <string>
 
-using namespace std;
 
-Class::Class(string uc,int day,int StartTime,int r,int dur) {
+Class::Class(std::string uc,int day,int StartTime,int r,int dur) {
     week_day = day;
     starting_time = StartTime;
     room = r;
