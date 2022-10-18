@@ -5,7 +5,6 @@
 #ifndef UNTITLED_CLASS_H
 #define UNTITLED_CLASS_H
 #include <string>
-using namespace std;
 
 
 class Class {
@@ -14,7 +13,8 @@ private:
     int starting_time;
     int room;
     int duration;
-    string uni_c;
+    std::string uni_c;
+    int maluco;
 
 public:
     Class(string uc, int day, int StartTime, int r, int dur);
