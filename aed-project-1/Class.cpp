@@ -5,13 +5,14 @@
 #include "Class.h"
 #include <string>
 
+using namespace std;
 
-Class::Class(std::string uc,int day,int StartTime,int r,int dur) {
-    week_day = day;
-    starting_time = StartTime;
-    room = r;
-    uni_c = uc;
-    duration = dur;
+
+Class::Class(string week_day,string start_hour,string duration, string type) {
+    this ->week_day = week_day;
+    this -> start_hour = start_hour;
+    this-> duration = duration;
+    this -> type = type;
 
 
 }
