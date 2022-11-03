@@ -14,10 +14,29 @@ private:
     vector<Lecture> lectures_;
 
 public:
+    /**
+     * Constructor.
+     * @brief Complexidade : O(1)
+     */
     Timetable();
+    /**
+     * @brief Complexidade : O(n)
+     * @param 1. lectures
+     */
     explicit Timetable(vector<Lecture>& lectures);
+    /**
+    * @brief Complexidade : O(n)
+    * @return
+    */
     vector<Lecture> getLectures() const;
+    /**
+    * @brief Complexidade : O(n)
+    */
     void sortTimetable();
+    /**
+     * @brief Complexidade : O(n)
+     * @param 1. lecture
+     */
     void addLecture(const Lecture& lecture);
 
 };
