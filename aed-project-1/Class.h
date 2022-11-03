@@ -5,7 +5,6 @@
 #ifndef UNTITLED_CLASS_H
 #define UNTITLED_CLASS_H
 
-#include "UC.h"
 #include "Timetable.h"
 #include "Student.h"
 #include <string>

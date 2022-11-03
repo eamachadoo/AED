@@ -3,8 +3,6 @@
 //
 
 #include "Class.h"
-#include "Timetable.h"
-#include "Student.h"
 #include <string>
 #include <list>
 #include <utility>

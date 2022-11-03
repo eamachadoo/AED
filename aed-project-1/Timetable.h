@@ -5,6 +5,7 @@
 #ifndef AED_TIMETABLE_H
 #define AED_TIMETABLE_H
 #include <vector>
+#include <map>
 #include "Lecture.h"
 
 using namespace std;

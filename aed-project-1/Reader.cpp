@@ -30,7 +30,7 @@ void buildClasses(){
             }
             else{
                 class_code = to_string(i) + "LEIC1" + to_string(j);
-                classes_leic.emplacebacck(new Class(class_code,horarios_leic[k]));
+                classes_leic.emplace_back(new Class(class_code,horarios_leic[k]));
             }
             k++;
         }
@@ -55,7 +55,7 @@ void buildTimetable() {
             if(column[1] == uc -> getCode()){
                 for (auto c: uc->getUcClasses()){
                     if (column[0] == c->getClassCode()){
-                        c->getSchedule() -> addLecture(Lecture(column[1], column[2], stof(column[3]),stof(column[4]), column[5]));
+                        c->getTimetable() -> addLecture(Lecture(column[1], column[2], stof(column[3]),stof(column[4]), column[5]));
                     }
                 }
             }
@@ -65,7 +65,3 @@ void buildTimetable() {
 }
 
 
-
-void Reader::read_info_uc() {
-
-}

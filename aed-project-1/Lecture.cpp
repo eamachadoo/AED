@@ -4,7 +4,7 @@
 
 #include "Lecture.h"
 
-Lecture::Lecture() {}
+Lecture::Lecture()= default;
 
 Lecture::Lecture(std::string uc_code, std::string weekday, float start_hour, float duration, std::string type) {
     this -> uc_code_ = uc_code;

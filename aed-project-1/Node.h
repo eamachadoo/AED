@@ -8,6 +8,8 @@
 #include "Student.h"
 #include <iostream>
 
+using namespace std;
+
 class Node {
 private :
     Student* student_;
