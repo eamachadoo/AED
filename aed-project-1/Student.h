@@ -18,16 +18,39 @@ private:
     Timetable *horarioEstudante_;
 
 public:
+    /**
+    * @brief Complexidade : O(1)
+    * Constructor.
+    */
     Student();
-
+    /**
+    * @brief Complexidade : O(n)
+    * @param 1. upCode
+    * @param 2. name
+    */
     Student(int upCode, string name);
-
+    /**
+     * @brief Complexidade : O(n)
+     * @param 3. upCode
+     * @param 4. name
+     * @param 5. horario
+     */
     Student(int upCode, string name, Timetable* horario);
+    /**
+    * @brief Complexidade : O(n)
+    * @return
+    */
 
     int getStudentCode() const;
-
+    /**
+     * @brief Complexidade : O(n)
+     * @return
+     */
     string getStudentName() const;
-
+    /**
+    * @brief Complexidade : O(n)
+    * @return
+    */
     Timetable* getStudentTimetable();
 };
 
