@@ -8,23 +8,14 @@
 
 #include "Student.h"
 #include "Timetable.h"
-#include "Turma.h"
 #include "Class.h"
 #include "UC.h"
 #include <vector>
 #include <algorithm>
 
-class Reader {
-private:
-    vector<Student> students;
-    vector<Class> classes;
-    vector<UC> uc;
-
-public:
-    void read_info_students();
-    void read_info_classes();
-    void read_info_uc();
-};
+extern vector<horario>
+extern void buildTimetable();
+extern void buildClasses();
 
 
 #endif //AED_READER_H

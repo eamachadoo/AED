@@ -3,7 +3,10 @@
 //
 
 #include "Reader.h"
+#include "Class.h"
 #include "Student.h"
+#include "Timetable.h"
+#include "UC.h"
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -11,38 +14,38 @@
 
 using namespace std;
 
-void Reader::read_info_students()
-{
-    fstream in("students_classes.csv");
-    string line, word, word1;
+void Reader::buildClasses{
 
-    if(in.is_open())
-    {
-        while(getline(in,line))
-        {
-            stringstream str(line);
+};
 
-            getline(str,word,',');
-            Student student = Student(word);
-
-            auto it = find(students.begin(),students.end(),student); // ver se é ou não um estudante já existente
-            if (it!= students.end()) //se já existe, usar estudante do vetor
-            {
-                student = *it; //estudante dentro do vetor
-            }
-            else
-            {
-                students.push_back(student);
-            }
-            getline(str,word,',');
-            student.set_Student_name(word);
-
-            getline(str,word,',');
-            getline(str,word1,',');
-
-            student.add_uc_class(word,word1);
-
-
+void buildTimetable() {
+    fstream in("classes.csv");
+    if(!in) {cout << "Could not open file." << endl;}
+    in.ignore(100, '\n');
+    string line, word;
+    vector<string> column;
+    while(in.peek() != EOF){
+        column.clear();
+        getline(line,line);
+        stringstream s(line);
+        while(getline(s,word,',')){
+            column.push_back(word);
         }
+        for (auto uc : UCs){
+            if(column[1] == uc -> getCode()){
+                for (auto c: uc->getUcClasses()){
+                    if (column[0] == c->getClassCode()){
+                        c->getSchedule() -> addLecture(Lecture(column[1], column[2], stof(column[3]),stof(column[4]), column[5]));
+                    }
+                }
+            }
+        }
+
     }
+}
+
+
+
+void Reader::read_info_uc() {
+
 }

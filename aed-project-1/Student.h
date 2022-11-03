@@ -5,34 +5,30 @@
 #ifndef AED_STUDENT_H
 #define AED_STUDENT_H
 
-#include"UC.h"
-#include <list>
+#include"Timetable.h"
 #include <string>
-#include <vector>
 
 using namespace std;
 
 
 class Student {
 private:
-    string up;
-    string name;
-    vector<UC> uc;
+    int upCode_;
+    string name_;
+    Timetable *horarioEstudante_;
 
 public:
     Student();
-    Student(string up);
-    Student(string up, string name);
 
-    string get_Student_up();
-    string get_Student_name();
+    Student(int upCode, string name);
 
-    void set_Student_up(string up);
-    void set_Student_name(string name);
-    void add_uc_class(string uc_code, string class_code);
+    Student(int upCode, string name, Timetable* horario);
 
-    bool operator == (Student student);
+    int getStudentCode() const;
+
+    string getStudentName() const;
+
+    Timetable* getStudentTimetable();
 };
-
 
 #endif //AED_STUDENT_H

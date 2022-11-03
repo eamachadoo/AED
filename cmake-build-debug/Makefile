@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/joaofilipeguedes/AED
+CMAKE_SOURCE_DIR = /Users/eamachado/AED
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/joaofilipeguedes/AED/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/eamachado/AED/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joaofilipeguedes/AED/cmake-build-debug/CMakeFiles /Users/joaofilipeguedes/AED/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eamachado/AED/cmake-build-debug/CMakeFiles /Users/eamachado/AED/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joaofilipeguedes/AED/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eamachado/AED/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,30 +177,6 @@ aed-project-1/Timetable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Timetable.cpp.s
 .PHONY : aed-project-1/Timetable.cpp.s
 
-aed-project-1/Turma.o: aed-project-1/Turma.cpp.o
-.PHONY : aed-project-1/Turma.o
-
-# target to build an object file
-aed-project-1/Turma.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Turma.cpp.o
-.PHONY : aed-project-1/Turma.cpp.o
-
-aed-project-1/Turma.i: aed-project-1/Turma.cpp.i
-.PHONY : aed-project-1/Turma.i
-
-# target to preprocess a source file
-aed-project-1/Turma.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Turma.cpp.i
-.PHONY : aed-project-1/Turma.cpp.i
-
-aed-project-1/Turma.s: aed-project-1/Turma.cpp.s
-.PHONY : aed-project-1/Turma.s
-
-# target to generate assembly for a file
-aed-project-1/Turma.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Turma.cpp.s
-.PHONY : aed-project-1/Turma.cpp.s
-
 aed-project-1/UC.o: aed-project-1/UC.cpp.o
 .PHONY : aed-project-1/UC.o
 
@@ -264,9 +240,6 @@ help:
 	@echo "... aed-project-1/Timetable.o"
 	@echo "... aed-project-1/Timetable.i"
 	@echo "... aed-project-1/Timetable.s"
-	@echo "... aed-project-1/Turma.o"
-	@echo "... aed-project-1/Turma.i"
-	@echo "... aed-project-1/Turma.s"
 	@echo "... aed-project-1/UC.o"
 	@echo "... aed-project-1/UC.i"
 	@echo "... aed-project-1/UC.s"

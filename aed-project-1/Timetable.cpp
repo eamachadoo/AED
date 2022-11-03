@@ -3,3 +3,14 @@
 //
 
 #include "Timetable.h"
+
+Timetable::Timetable() = default;
+
+Timetable::Timetable(vector<Lecture>& lectures) : lectures_(lectures){}
+
+vector<Lecture> Timetable::getLectures() const {return lectures_;}
+
+void Timetable::sortTimetable() {}
+
+void Timetable::addLecture(const Lecture &lecture) :{}
+

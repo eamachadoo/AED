@@ -3,16 +3,23 @@
 //
 
 #include "Class.h"
+#include "Timetable.h"
+#include "Student.h"
 #include <string>
+#include <list>
+#include <utility>
 
 using namespace std;
 
 
-Class::Class(string week_day,string start_hour,string duration, string type) {
-    this ->week_day = week_day;
-    this -> start_hour = start_hour;
-    this-> duration = duration;
-    this -> type = type;
+Class::Class() = default;
 
-
+Class::Class(string class_code) {
+    this -> class_code_ = std::move(class_code);
 }
+Class::Class(string class_code, Timetable *horario) : class_code_(std::move(class_code)), horario_(horario){}
+
+Class::Class(string class_code, Timetable*horario,const list<Student*> students) :
+class_code_(std::move(class_code)),horario_(horario),students_(students) {}
+
+string Class::getClassCode() const {return class_code_;}

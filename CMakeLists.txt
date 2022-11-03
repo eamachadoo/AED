@@ -11,7 +11,5 @@ add_executable(AED
         aed-project-1/main.cpp
         aed-project-1/UC.cpp
         aed-project-1/UC.h
-        aed-project-1/Turma.cpp
-        aed-project-1/Turma.h
         aed-project-1/Timetable.cpp
         aed-project-1/Timetable.h)
