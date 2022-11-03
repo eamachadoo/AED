@@ -19,16 +19,65 @@ private:
     string name_;
 
 public:
+    /**
+     * Constructor.
+     * @brief Complexidade : O(1)
+     */
     UC();
+    /**
+    * @brief Complexidade : O(n)
+    * @param 1. uc_code
+    * @param 2. name
+    * @param 3. ects
+    */
     UC(string uc_code, string name, float ects);
+    /**
+     * @brief Complexidade : O(n)
+     * @param 1. uc_code
+     * @param 2. name
+     * @param 3. ects
+     * @param 4. uc_classes
+     */
     UC(string uc_code, string name, float ects, vector <Class*> uc_classes);
+    /**
+    * @brief Complexidade : O(n)
+    * @return
+    */
     string getCode();
+    /**
+     * @brief Complexidade : O(n)
+     * @param 1. uc_code
+     */
     void Setcode(string uc_code);
+    /**
+     * @brief Complexidade : O(n)
+     * @return
+     */
     string getName();
+    /**
+     * @brief Complexidade : O(n)
+     * @return
+     */
     float getCredits() const;
+    /**
+    * @brief Complexidade : O(n)
+    * @param 1. ects
+    */
     void setCredits(float ects);
+    /**
+    * @brief Complexidade : O(n)
+    * @return
+    */
     vector<Class*>getUcClasses();
+    /**
+     * @brief Complexidade : O(n)
+     * @param 1. v
+     */
     void setUcClasses(std::vector<Class*> v);
+    /**
+     * @brief Complexidade : O(n)
+     * @param c
+     */
     void addUcClass(Class* c);
 
 };
