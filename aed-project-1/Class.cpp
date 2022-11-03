@@ -19,7 +19,16 @@ Class::Class(string class_code) {
 }
 Class::Class(string class_code, Timetable *horario) : class_code_(std::move(class_code)), horario_(horario){}
 
-Class::Class(string class_code, Timetable*horario,const list<Student*> students) :
+Class::Class(std::string class_code, Timetable *horario, const int &students) :
 class_code_(std::move(class_code)),horario_(horario),students_(students) {}
 
 string Class::getClassCode() const {return class_code_;}
+
+Timetable *Class::getTimetable() {return horario_;}
+
+list<Student *> Class::getStudentList() {return students_;}
+
+void Class::addStudent(Student *s) {
+    students_.push_back(s);
+}
+

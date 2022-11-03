@@ -14,8 +14,28 @@
 
 using namespace std;
 
-void Reader::buildClasses{
+void buildClasses(){
+    string class_code;
+    for(int i = 0; i <= 47; i++){
+        horarios_leic.emplace_back(new Timetable());
+    }
+    horarios_leic.pop_back();
 
+    int k = 0;
+    for(int i = 1; i <= 3; i++){
+        for(int j = 1; j <= 16; j++){
+            if(j<10){
+                class_code = to_string(i)+ "LEIC0" + to_string(j);
+                classes_leic.emplace_back(new Class(class_code,horarios_leic[k]));
+            }
+            else{
+                class_code = to_string(i) + "LEIC1" + to_string(j);
+                classes_leic.emplacebacck(new Class(class_code,horarios_leic[k]));
+            }
+            k++;
+        }
+    }
+    classes_leic.pop_back();
 };
 
 void buildTimetable() {

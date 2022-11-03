@@ -7,6 +7,7 @@
 
 #include "UC.h"
 #include "Timetable.h"
+#include "Student.h"
 #include <string>
 #include <list>
 
@@ -23,7 +24,6 @@ public:
     Class();
     explicit Class(string class_code);
     explicit Class(string class_code,Timetable* horario);
-    explicit Class(string class_code,Timetable* horario,const list<Student*> students);
     string getClassCode() const;
     Timetable* getTimetable();
     list<Student*> getStudentList();

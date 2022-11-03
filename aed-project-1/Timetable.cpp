@@ -12,5 +12,6 @@ vector<Lecture> Timetable::getLectures() const {return lectures_;}
 
 void Timetable::sortTimetable() {}
 
-void Timetable::addLecture(const Lecture &lecture) :{}
+void Timetable::addLecture(const Lecture &lecture):
+{}
 
