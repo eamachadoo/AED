@@ -21,12 +21,48 @@ private:
     list<Student*> students_;
 
 public:
+    /**
+     * Default Constructor.
+     * @brief Complexidade : O(1)
+     */
     Class();
+    /**
+     * Constructor.
+     * @brief Complexidade : O(n)
+     * @param 1. class_code
+     */
     explicit Class(string class_code);
+    /**
+     * Constructor.
+     * @brief Complexidade : O(n)
+     * @param 1. class_code
+     * @param 2. horario
+     */
     explicit Class(string class_code,Timetable* horario);
+    /**
+    * Getter function: gets class code.
+    * @brief Complexidade : O(n)
+    * @return Class Code
+    */
     string getClassCode() const;
+    /**
+    * Getter function: gets class timetable.
+    * @brief Complexidade : O(n)
+    * @return Time
+    */
     Timetable* getTimetable();
+    /**
+     * Getter function: gets students.
+     * @brief Complexidade : O(n)
+     * @return Student
+     */
     list<Student*> getStudentList();
+    /**
+     * Adds student while building class.
+     * @brief Complexidade : O(n)
+     * @param 1. s
+     * @return Student object.
+     */
     void addStudent(Student* s);
 };
 
