@@ -15,15 +15,55 @@ private :
     Node* left_;
 
 public:
+    /**
+     *
+     */
     Node();
+    /**
+     *
+     * @param student
+     */
     explicit Node(Student* student);
+    /**
+     *
+     * @return
+     */
     Student* getStudent();
+    /**
+     *
+     * @return
+     */
     Node* getRightBranch();
+    /**
+     *
+     * @return
+     */
     Node* getLeftBranch();
+    /**
+     *
+     * @param student
+     * @return
+     */
     Node* insert(Node*, Student* student);
+    /**
+     *
+     * @param upCode
+     */
     void search(Node*, int upCode);
+    /**
+     *
+     * @param upCode
+     */
     void searchP(Node*, int upCode);
+    /**
+     *
+     */
     void show(Node*);
+    /**
+     *
+     * @param choice
+     * @return
+     */
     static int treeTraversal(Node*, root, string choice);
 };
 
