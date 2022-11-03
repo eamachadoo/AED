@@ -8,100 +8,118 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/eamachado/AED/cmake-build-debug"/>
+				<Option working_dir="/Users/joaofilipeguedes/AED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="AED">
-				<Option output="/Users/eamachado/AED/cmake-build-debug/AED" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/eamachado/AED/cmake-build-debug"/>
+				<Option output="/Users/joaofilipeguedes/AED/cmake-build-debug/AED" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/joaofilipeguedes/AED/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/eamachado/AED/aed-project-1"/>
+					<Add directory="/Users/joaofilipeguedes/AED/aed-project-1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 AED"/>
-					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 AED"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="AED/fast">
-				<Option output="/Users/eamachado/AED/cmake-build-debug/AED" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/eamachado/AED/cmake-build-debug"/>
+				<Option output="/Users/joaofilipeguedes/AED/cmake-build-debug/AED" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/joaofilipeguedes/AED/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/eamachado/AED/aed-project-1"/>
+					<Add directory="/Users/joaofilipeguedes/AED/aed-project-1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.1.6/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 AED/fast"/>
-					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 AED/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/eamachado/AED/cmake-build-debug"/>
+				<Option working_dir="/Users/joaofilipeguedes/AED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/eamachado/AED/cmake-build-debug"/>
+				<Option working_dir="/Users/joaofilipeguedes/AED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/eamachado/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/joaofilipeguedes/AED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/eamachado/AED/aed-project-1/Class.cpp">
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Class.cpp">
 			<Option target="AED"/>
 		</Unit>
-		<Unit filename="/Users/eamachado/AED/aed-project-1/Class.h">
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Class.h">
 			<Option target="AED"/>
 		</Unit>
-		<Unit filename="/Users/eamachado/AED/aed-project-1/Timetable.cpp">
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Lecture.cpp">
 			<Option target="AED"/>
 		</Unit>
-		<Unit filename="/Users/eamachado/AED/aed-project-1/Timetable.h">
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Lecture.h">
 			<Option target="AED"/>
 		</Unit>
-		<Unit filename="/Users/eamachado/AED/aed-project-1/UC.cpp">
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Node.cpp">
 			<Option target="AED"/>
 		</Unit>
-		<Unit filename="/Users/eamachado/AED/aed-project-1/UC.h">
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Node.h">
 			<Option target="AED"/>
 		</Unit>
-		<Unit filename="/Users/eamachado/AED/aed-project-1/main.cpp">
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Reader.cpp">
 			<Option target="AED"/>
 		</Unit>
-		<Unit filename="/Users/eamachado/AED/CMakeLists.txt">
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Reader.h">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Timetable.cpp">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Timetable.h">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/UC.cpp">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/UC.h">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/main.cpp">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
