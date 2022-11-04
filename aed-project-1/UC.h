@@ -26,7 +26,7 @@ public:
      */
     UC();
     /**
-     * Constructor.
+     * Overloaded Constructor.
      * @brief Complexidade : O(n)
      * @param 1. uc_code
      * @param 2. name
@@ -34,7 +34,7 @@ public:
      */
     UC(string uc_code, string name, float ects);
     /**
-     * Constructor.
+     * Overloaded Constructor.
      * @brief Complexidade : O(n)
      * @param 1. uc_code
      * @param 2. name
@@ -43,8 +43,8 @@ public:
      */
     UC(string uc_code, string name, float ects, vector <Class*> uc_classes);
     /**
-     * Getter function: helps the function by providing
-     * the UC code.
+     * Getter function: retrieves the value of the vector uc_code, which is
+     * defined as private.
      * @brief Complexidade : O(n)
      * @return
      */
@@ -52,40 +52,43 @@ public:
 
      string getCode();
     /**
-     * Setter Function: helps change, set the code.
-     * @brief Complexidade : O(1)
+     * Setter Function: it's given an element and modifies the values
+     * of the private vector.
+     * @brief Complexidade : O(n)
      * @param 1. uc_code
      */
     void Setcode(string uc_code);
     /**
-     * Getter Function: helps get the name from the file.
-     * @brief Complexidade : O(1)
+     * Getter Function: retrieves the string name_ from private.
+     * @brief Complexidade : O(n)
      * @return Name of student.
      */
      int getNumStudent();
 
     string getName();
     /**
-     * @brief Complexidade : O(1)
-     * @return Credits
+     * Getter function: retrieves the float ects_ from private.
+     * @brief Complexidade : O(n)
+     * @return Float element etcs_
      */
     float getCredits() const;
     /**
-     * Setter Function: modifies the value of the ects by
-     * assigning it a new one.
+     * Setter Function: it's given an element and modifies the values
+     * of the float ects_.
      * @brief Complexidade : O(n)
      * @param 1. ects
      */
     void setCredits(float ects);
     /**
-     * Getter fucntion: gets the UC Classes.
+     * Getter function: retrieves/reads the private vector uc_classes,
+     * making it available to the program outside ot the class.
      * @brief Complexidade : O(n)
      * @return Vector containing the UC classes.
      */
     vector<Class*>getUcClasses();
     /**
      * Setter function: it's given an element from the vector obtained
-     * through the getter class (getUcClasses), and modifies the values
+     * through the getter class (getUcClasses), and updates the values
      * of the private vector.
      * @brief Complexidade : O(n)
      * @param 1. v

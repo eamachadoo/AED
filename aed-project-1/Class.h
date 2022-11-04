@@ -26,20 +26,20 @@ public:
      */
     Class();
     /**
-     * Constructor.
-     * @brief Complexidade : O(1)
+     * Overloaded Constructor.
+     * @brief Complexidade : O(n)
      * @param 1. class_code
      */
     explicit Class(string class_code);
     /**
-     * Constructor.
-     * @brief Complexidade : O(1)
+     * Overloaded Constructor.
+     * @brief Complexidade : O(n)
      * @param 1. class_code
      * @param 2. horario
      */
     explicit Class(string class_code,Timetable* horario);
     /**
-     * Constructor.
+     * Overloaded Constructor.
      * @brief Complexidade: O(1)
      * @param 1. class_code
      * @param 2. horario
@@ -47,28 +47,33 @@ public:
      */
     explicit Class(string class_code,Timetable* horario, const int &students);
     /**
-      * Getter function: gets class code.
+      * Getter function: retrieves the value of the class_code
+      * which is private. Allowing the program to access it.
       * @brief Complexidade : O(n)
       * @return Class Code
       */
     string getClassCode() const;
     /**
-    * Getter function: gets class timetable.
-    * @brief Complexidade : O(n)
-    * @return Horario da Turma
-    */
+     * Getter function: retrieves the value of the the pointer horario,
+     * to obtain it's value (time of class).
+     * @brief Complexidade : O(n)
+     * @return Horario da Turma
+     */
     Timetable* getTimetable();
     /**
-     * Getter function: gets students.
+     * Getter function: retrieves the value of the list student, obtaining
+     * the element indicating the student's name/number.
      * @brief Complexidade : O(n)
-     * @return Student
+     * @return Student Name/Code
      */
     list<Student*> getStudentList();
     /**
-     * Adds student while building class.
+     * Adds student element (name/code) to students_ (list) by inserting the new element
+     * at the end of the list using the push_back() function and increases
+     * size of list by one.
      * @brief Complexidade : O(n)
      * @param 1. s
-     * @return Student object.
+     * @return Student list object.
      */
     void addStudent(Student* s);
 };
