@@ -43,6 +43,8 @@ public:
     * @brief Complexidade : O(n)
     * @return Class Code
     */
+    explicit Class(string class_code,Timetable* horario, const int &students);
+
     string getClassCode() const;
     /**
     * Getter function: gets class timetable.
