@@ -27,29 +27,35 @@ public:
     Class();
     /**
      * Constructor.
-     * @brief Complexidade : O(n)
+     * @brief Complexidade : O(1)
      * @param 1. class_code
      */
     explicit Class(string class_code);
     /**
      * Constructor.
-     * @brief Complexidade : O(n)
+     * @brief Complexidade : O(1)
      * @param 1. class_code
      * @param 2. horario
      */
     explicit Class(string class_code,Timetable* horario);
     /**
-    * Getter function: gets class code.
-    * @brief Complexidade : O(n)
-    * @return Class Code
-    */
+     * Constructor.
+     * @brief Complexidade: O(1)
+     * @param 1. class_code
+     * @param 2. horario
+     * @param 3. students
+     */
     explicit Class(string class_code,Timetable* horario, const int &students);
-
+    /**
+      * Getter function: gets class code.
+      * @brief Complexidade : O(n)
+      * @return Class Code
+      */
     string getClassCode() const;
     /**
     * Getter function: gets class timetable.
     * @brief Complexidade : O(n)
-    * @return Time
+    * @return Horario da Turma
     */
     Timetable* getTimetable();
     /**
