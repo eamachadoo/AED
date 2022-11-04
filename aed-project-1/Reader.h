@@ -15,8 +15,6 @@
 #include <set>
 #include <map>
 
-extern vector<Class> horario_estudante(string up);
-
 extern vector<UC*> UCs;
 
 extern vector<Class*> classes_leic;
@@ -29,6 +27,9 @@ extern vector<Timetable*> student_timetables;
 
 extern Node node, *root;
 
+extern void setUCs();
+
+extern void getU
 extern void buildTimetable();
 extern void buildClasses();
 extern vector

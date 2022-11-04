@@ -46,7 +46,7 @@ void buildTimetable() {
     vector<string> column;
     while(in.peek() != EOF){
         column.clear();
-        getline(line,line);
+        getline(in,line);
         stringstream s(line);
         while(getline(s,word,',')){
             column.push_back(word);
