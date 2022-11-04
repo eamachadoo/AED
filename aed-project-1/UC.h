@@ -20,18 +20,20 @@ private:
 
 public:
     /**
-     * Constructor.
+     * Default Constructor.
      * @brief Complexidade : O(1)
      */
     UC();
     /**
-    * @brief Complexidade : O(n)
-    * @param 1. uc_code
-    * @param 2. name
-    * @param 3. ects
-    */
+     * Constructor.
+     * @brief Complexidade : O(n)
+     * @param 1. uc_code
+     * @param 2. name
+     * @param 3. ects
+     */
     UC(string uc_code, string name, float ects);
     /**
+     * Constructor.
      * @brief Complexidade : O(n)
      * @param 1. uc_code
      * @param 2. name
@@ -40,41 +42,53 @@ public:
      */
     UC(string uc_code, string name, float ects, vector <Class*> uc_classes);
     /**
-    * @brief Complexidade : O(n)
-    * @return
-    */
+     * Getter function: helps the function by providing
+     * the UC code.
+     * @brief Complexidade : O(n)
+     * @return
+     */
     string getCode();
     /**
-     * @brief Complexidade : O(n)
+     * Setter Function: helps change, set the code.
+     * @brief Complexidade : O(1)
      * @param 1. uc_code
      */
     void Setcode(string uc_code);
     /**
-     * @brief Complexidade : O(n)
-     * @return
+     * Getter Function: helps get the name from the file.
+     * @brief Complexidade : O(1)
+     * @return Name of student.
      */
     string getName();
     /**
-     * @brief Complexidade : O(n)
-     * @return
+     * @brief Complexidade : O(1)
+     * @return Credits
      */
     float getCredits() const;
     /**
-    * @brief Complexidade : O(n)
-    * @param 1. ects
-    */
+     * Setter Function: modifies the value of the ects by
+     * assigning it a new one.
+     * @brief Complexidade : O(n)
+     * @param 1. ects
+     */
     void setCredits(float ects);
     /**
-    * @brief Complexidade : O(n)
-    * @return
-    */
+     * Getter fucntion: gets the UC Classes.
+     * @brief Complexidade : O(n)
+     * @return Vector containing the UC classes.
+     */
     vector<Class*>getUcClasses();
     /**
+     * Setter function: it's given an element from the vector obtained
+     * through the getter class (getUcClasses), and modifies the values
+     * of the private vector.
      * @brief Complexidade : O(n)
      * @param 1. v
      */
     void setUcClasses(std::vector<Class*> v);
     /**
+     * This function inserts new element at the end of vector
+     * and increases size of vector by one.
      * @brief Complexidade : O(n)
      * @param c
      */
