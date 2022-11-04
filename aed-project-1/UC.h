@@ -81,7 +81,7 @@ public:
     void setCredits(float ects);
     /**
      * Getter function: retrieves/reads the private vector uc_classes,
-     * making it available to the program outside ot the class.
+     * making it available to the program outside of the class.
      * @brief Complexidade : O(n)
      * @return Vector containing the UC classes.
      */

@@ -20,45 +20,58 @@ private:
 
 public:
     /**
-    * Constructor.
-    * @brief Complexidade : O(1)
-    */
+     * Default Constructor.
+     * @brief Complexidade : O(1)
+     */
     Lecture();
     /**
-    * @brief Complexidade : O(n)
-    * @param 1. uc_code
-    * @param 2. weekday
-    * @param 3. start_hour
-    * @param 4. duration
-    * @param 5. type
-    */
+     * Overloaded Constructor.
+     * @brief Complexidade : O(n)
+     * @param 1. uc_code
+     * @param 2. weekday
+     * @param 3. start_hour
+     * @param 4. duration
+     * @param 5. type
+     */
     Lecture(string uc_code, string weekday, float start_hour, float duration, string type);
     /**
+     * Getter function: retrieves/reads the private string uc_code_,
+     * making it available to the program outside of the class.
      * @brief Complexidade : O(n)
-     * @return
+     * @return String uc_code_
      */
     string getUcCode();
     /**
+     * Getter function: retrieves/reads the private string weekday_,
+     * making it available to the program outside of the class.
      * @brief Complexidade : O(n)
-     * @return
+     * @return String weekday_
      */
     string getWeekday();
     /**
-    * @brief Complexidade : O(n)
-    * @return
-    */
+     * Getter function: retrieves/reads the private float value of start_hour_,
+     * making it available to the program outside of the class.
+     * @brief Complexidade : O(n)
+     * @return Float start_hour
+     */
     float getStartHour();
     /**
+     * Getter function: retrieves/reads the private float value of duration_,
+     * making it available to the program outside of the class.
      * @brief Complexidade : O(n)
-     * @return
+     * @return Float duration_
      */
     float getDuration();
     /**
+     * Getter function: retrieves/reads the private string type_,
+     * making it available to the program outside of the class.
      * @brief Complexidade : O(n)
-     * @return
+     * @return String type_
      */
     string getType();
     /**
+     * Copy constructor: function that initializes an object using
+     * another object of the same class.
      * @brief Complexidade : O(n)
      * @param 1. l
      */

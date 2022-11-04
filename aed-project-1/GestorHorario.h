@@ -7,8 +7,18 @@
 
 class GestorHorario {
 public:
+    /**
+     * Default Constructor.
+     * @brief Complexidade: O(1)
+     */
     GestorHorario();
+    /**
+     *
+     */
     static void menu();
+    /**
+     *
+     */
     void ReaderOutput();
 };
 

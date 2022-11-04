@@ -8,10 +8,27 @@
 
 class Menu {
 public:
+    /**
+     *
+     */
     Menu();
+    /**
+     *
+     */
     void MenuClean();
+    /**
+     *
+     */
     void MenuTitle();
+    /**
+     *
+     * @param list_size
+     */
     void MainMenu(int list_size);
+    /**
+     *
+     * @param list_size
+     */
     void UcsMenu(int list_size);
 };
 
