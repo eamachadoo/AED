@@ -14,6 +14,11 @@
 
 using namespace std;
 
+void dataClasses(){
+
+}
+
+
 void buildClasses(){
     string class_code;
     for(int i = 0; i <= 47; i++){
@@ -22,6 +27,7 @@ void buildClasses(){
     horarios_leic.pop_back();
 
     int k = 0;
+
     for(int i = 1; i <= 3; i++){
         for(int j = 1; j <= 16; j++){
             if(j<10){
@@ -60,8 +66,24 @@ void buildTimetable() {
                 }
             }
         }
-
     }
 }
+
+void ClassesPerUC(){
+    string textLine;
+    ifstream in("classes_per_uc.csv");
+    getline(in, textLine);
+    while(getline(in,textLine)){
+        string ucCode,classCode;
+        stringstream input(textLine);
+
+        getline(input,ucCode,',');
+        getline(input,classCode,',');
+
+        UCs.push_back(UC(new UC(ucCode,classCode,0)));
+    }
+}
+
+void
 
 

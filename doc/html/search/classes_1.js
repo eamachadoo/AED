@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lecture_0',['Lecture',['../class_lecture.html',1,'']]]
+  ['gestorhorario_0',['GestorHorario',['../class_gestor_horario.html',1,'']]]
 ];

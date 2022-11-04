@@ -17,6 +17,7 @@ private:
     float ects_;
     vector<Class*> uc_classes_;
     string name_;
+    int numStudents_;
 
 public:
     /**
@@ -47,7 +48,9 @@ public:
      * @brief Complexidade : O(n)
      * @return
      */
-    string getCode();
+     UC(string uc_code, vector<Class*> uc_classes, int numStudents);
+
+     string getCode();
     /**
      * Setter Function: helps change, set the code.
      * @brief Complexidade : O(1)
@@ -59,6 +62,8 @@ public:
      * @brief Complexidade : O(1)
      * @return Name of student.
      */
+     int getNumStudent();
+
     string getName();
     /**
      * @brief Complexidade : O(1)

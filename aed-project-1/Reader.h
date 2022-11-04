@@ -15,6 +15,15 @@
 #include <set>
 #include <map>
 
+
+extern void ClassesPerUC();
+extern void setUCs();
+extern void getClassLectures();
+extern void getStudents();
+extern void sortClassTimetable();
+extern void buildTimetable();
+extern void buildClasses();
+
 extern vector<UC*> UCs;
 
 extern vector<Class*> classes_leic;
@@ -27,12 +36,18 @@ extern vector<Timetable*> student_timetables;
 
 extern Node node, *root;
 
-extern void setUCs();
+extern void ClassesPerUC();
 
-extern void getU
+extern void setUCs();
+extern void getClassLectures();
+extern void getStudents();
+extern void sortClassTimetable();
+
+
 extern void buildTimetable();
 extern void buildClasses();
-extern vector
+
+
 
 
 #endif //AED_READER_H

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['getclasscode_0',['getClassCode',['../class_class.html#aa68718414a5cad02b1afdba4ad450971',1,'Class']]],
+  ['gestorhorario_0',['GestorHorario',['../class_gestor_horario.html',1,'']]],
   ['getcode_1',['getCode',['../class_u_c.html#aac8248e2a2f02cdee6e982970892f046',1,'UC']]],
   ['getcredits_2',['getCredits',['../class_u_c.html#a42a0e9dfd34ba829fe185354ed94d292',1,'UC']]],
   ['getduration_3',['getDuration',['../class_lecture.html#af0caf98287bc598ad356e29598a0d387',1,'Lecture']]],

@@ -16,9 +16,6 @@ void GestorHorario::ReaderOutput() {
 
 void GestorHorario::menu() {
 
-}
-
-void GestorHorario::loginScreen() {
     char input;
 
     bool done = false;
@@ -46,15 +43,25 @@ void GestorHorario::loginScreen() {
 
         switch(input){
             case 'A':
-                signInUI();
+                cout << "ok" << endl;
                 break;
             case 'B':
+                cout << "ok" << endl;
                 break;
             case 'C':
+                cout << "ok" << endl;
                 break;
             case 'D':
+                cout << "ok" << endl;
+                break;
+            case 'X':
+                cout << "A terminar programa..." << endl;
+            default:
+                done = false;
                 break;
 
         }
     }
 }
+
+

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uc_0',['UC',['../class_u_c.html',1,'']]]
+  ['timetable_0',['Timetable',['../class_timetable.html',1,'']]]
 ];

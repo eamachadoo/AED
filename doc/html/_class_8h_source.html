@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AED: Projeto 1: aed-project-1/Class.h Source File</title>
+<title>My Project: aed-project-1/Class.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AED: Projeto 1
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">Elaboração de Horario</div>
   </td>
  </tr>
  </tbody>
@@ -84,40 +83,41 @@ $(function() {
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef UNTITLED_CLASS_H</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define UNTITLED_CLASS_H</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;UC.h&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;Timetable.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;Student.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;list&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_class.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_class.html">Class</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">string</span> class_code_;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="class_timetable.html">Timetable</a>* horario_;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    list&lt;Student*&gt; students_;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_class.html#a5b97d41527df822c6b1211931f79ca15">   28</a></span>    <a class="code hl_function" href="class_class.html#a5b97d41527df822c6b1211931f79ca15">Class</a>();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_class.html#a5b97d41527df822c6b1211931f79ca15">Class</a>(<span class="keywordtype">string</span> class_code);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_class.html#a5b97d41527df822c6b1211931f79ca15">Class</a>(<span class="keywordtype">string</span> class_code,<a class="code hl_class" href="class_timetable.html">Timetable</a>* horario);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_class.html#aa68718414a5cad02b1afdba4ad450971">getClassCode</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_class" href="class_timetable.html">Timetable</a>* <a class="code hl_function" href="class_class.html#a7b586fd9d230d0e84914d27948ac3170">getTimetable</a>();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    list&lt;Student*&gt; <a class="code hl_function" href="class_class.html#a51bf4fea9b61c3d6947c687063b48fdb">getStudentList</a>();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_class.html#ab652a644782e66674abdc9b2f50a52a7">addStudent</a>(<a class="code hl_class" href="class_student.html">Student</a>* s);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">//UNTITLED_CLASS_H</span></div>
-<div class="ttc" id="aclass_class_html"><div class="ttname"><a href="class_class.html">Class</a></div><div class="ttdef"><b>Definition:</b> Class.h:16</div></div>
-<div class="ttc" id="aclass_class_html_a51bf4fea9b61c3d6947c687063b48fdb"><div class="ttname"><a href="class_class.html#a51bf4fea9b61c3d6947c687063b48fdb">Class::getStudentList</a></div><div class="ttdeci">list&lt; Student * &gt; getStudentList()</div><div class="ttdoc">Complexidade : O(n)</div><div class="ttdef"><b>Definition:</b> Class.cpp:29</div></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;Timetable.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;Student.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_class.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_class.html">Class</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">string</span> class_code_;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="class_timetable.html">Timetable</a>* horario_;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    list&lt;Student*&gt; students_;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_class.html#a5b97d41527df822c6b1211931f79ca15">   27</a></span>    <a class="code hl_function" href="class_class.html#a5b97d41527df822c6b1211931f79ca15">Class</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_class.html#a5b97d41527df822c6b1211931f79ca15">Class</a>(<span class="keywordtype">string</span> class_code);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_class.html#a5b97d41527df822c6b1211931f79ca15">Class</a>(<span class="keywordtype">string</span> class_code,<a class="code hl_class" href="class_timetable.html">Timetable</a>* horario);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_class.html#aa265b11970b60f3f1725fff41cb05919">   46</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_class.html#aa265b11970b60f3f1725fff41cb05919">Class</a>(<span class="keywordtype">string</span> class_code,<a class="code hl_class" href="class_timetable.html">Timetable</a>* horario, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;students);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">string</span> getClassCode() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="class_timetable.html">Timetable</a>* <a class="code hl_function" href="class_class.html#a7b586fd9d230d0e84914d27948ac3170">getTimetable</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    list&lt;Student*&gt; <a class="code hl_function" href="class_class.html#a51bf4fea9b61c3d6947c687063b48fdb">getStudentList</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_class.html#ab652a644782e66674abdc9b2f50a52a7">addStudent</a>(<a class="code hl_class" href="class_student.html">Student</a>* s);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">//UNTITLED_CLASS_H</span></div>
+<div class="ttc" id="aclass_class_html"><div class="ttname"><a href="class_class.html">Class</a></div><div class="ttdef"><b>Definition:</b> Class.h:15</div></div>
+<div class="ttc" id="aclass_class_html_a51bf4fea9b61c3d6947c687063b48fdb"><div class="ttname"><a href="class_class.html#a51bf4fea9b61c3d6947c687063b48fdb">Class::getStudentList</a></div><div class="ttdeci">list&lt; Student * &gt; getStudentList()</div><div class="ttdoc">Complexidade : O(n)</div><div class="ttdef"><b>Definition:</b> Class.cpp:27</div></div>
 <div class="ttc" id="aclass_class_html_a5b97d41527df822c6b1211931f79ca15"><div class="ttname"><a href="class_class.html#a5b97d41527df822c6b1211931f79ca15">Class::Class</a></div><div class="ttdeci">Class()</div><div class="ttdoc">Complexidade : O(1)</div></div>
-<div class="ttc" id="aclass_class_html_a7b586fd9d230d0e84914d27948ac3170"><div class="ttname"><a href="class_class.html#a7b586fd9d230d0e84914d27948ac3170">Class::getTimetable</a></div><div class="ttdeci">Timetable * getTimetable()</div><div class="ttdoc">Complexidade : O(n)</div><div class="ttdef"><b>Definition:</b> Class.cpp:27</div></div>
-<div class="ttc" id="aclass_class_html_aa68718414a5cad02b1afdba4ad450971"><div class="ttname"><a href="class_class.html#aa68718414a5cad02b1afdba4ad450971">Class::getClassCode</a></div><div class="ttdeci">string getClassCode() const</div><div class="ttdoc">Complexidade : O(n)</div><div class="ttdef"><b>Definition:</b> Class.cpp:25</div></div>
-<div class="ttc" id="aclass_class_html_ab652a644782e66674abdc9b2f50a52a7"><div class="ttname"><a href="class_class.html#ab652a644782e66674abdc9b2f50a52a7">Class::addStudent</a></div><div class="ttdeci">void addStudent(Student *s)</div><div class="ttdoc">Complexidade : O(n)</div><div class="ttdef"><b>Definition:</b> Class.cpp:31</div></div>
-<div class="ttc" id="aclass_student_html"><div class="ttname"><a href="class_student.html">Student</a></div><div class="ttdef"><b>Definition:</b> Student.h:14</div></div>
-<div class="ttc" id="aclass_timetable_html"><div class="ttname"><a href="class_timetable.html">Timetable</a></div><div class="ttdef"><b>Definition:</b> Timetable.h:12</div></div>
+<div class="ttc" id="aclass_class_html_a7b586fd9d230d0e84914d27948ac3170"><div class="ttname"><a href="class_class.html#a7b586fd9d230d0e84914d27948ac3170">Class::getTimetable</a></div><div class="ttdeci">Timetable * getTimetable()</div><div class="ttdoc">Complexidade : O(n)</div><div class="ttdef"><b>Definition:</b> Class.cpp:25</div></div>
+<div class="ttc" id="aclass_class_html_aa265b11970b60f3f1725fff41cb05919"><div class="ttname"><a href="class_class.html#aa265b11970b60f3f1725fff41cb05919">Class::Class</a></div><div class="ttdeci">Class(string class_code, Timetable *horario, const int &amp;students)</div><div class="ttdoc">Complexidade : O(n)</div></div>
+<div class="ttc" id="aclass_class_html_ab652a644782e66674abdc9b2f50a52a7"><div class="ttname"><a href="class_class.html#ab652a644782e66674abdc9b2f50a52a7">Class::addStudent</a></div><div class="ttdeci">void addStudent(Student *s)</div><div class="ttdoc">Complexidade : O(n)</div><div class="ttdef"><b>Definition:</b> Class.cpp:29</div></div>
+<div class="ttc" id="aclass_student_html"><div class="ttname"><a href="class_student.html">Student</a></div><div class="ttdef"><b>Definition:</b> Student.h:13</div></div>
+<div class="ttc" id="aclass_timetable_html"><div class="ttname"><a href="class_timetable.html">Timetable</a></div><div class="ttdef"><b>Definition:</b> Timetable.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

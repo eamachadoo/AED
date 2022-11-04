@@ -10,11 +10,6 @@ public:
     GestorHorario();
     static void menu();
     void ReaderOutput();
-
-    void loginScreen();
-    void signInUI();
-    void timetableDisplay();
-
 };
 
 

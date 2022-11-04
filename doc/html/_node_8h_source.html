@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AED: Projeto 1: aed-project-1/Node.h Source File</title>
+<title>My Project: aed-project-1/Node.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">AED: Projeto 1
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">Elaboração de Horario</div>
   </td>
  </tr>
  </tbody>
@@ -87,28 +86,30 @@ $(function() {
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;Student.h&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_node.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_node.html">Node</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>private :</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_class" href="class_student.html">Student</a>* student_;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_class" href="class_node.html">Node</a>* right_;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="class_node.html">Node</a>* left_;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_node.html">Node</a>();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="class_node.html">Node</a>(<a class="code hl_class" href="class_student.html">Student</a>* student);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="class_student.html">Student</a>* <a class="code hl_function" href="class_node.html#a9b43e371cfa212684856e9fe9047cd29">getStudent</a>();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="class_node.html">Node</a>* <a class="code hl_function" href="class_node.html#ae7b270f576bb1de89d4a734a3bb46661">getRightBranch</a>();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="class_node.html">Node</a>* <a class="code hl_function" href="class_node.html#afbec42622b37b0491c4b5066f15fabf6">getLeftBranch</a>();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="class_node.html">Node</a>* <a class="code hl_function" href="class_node.html#a878f2d025bb93529d2c16a1aedbeb0c9">insert</a>(<a class="code hl_class" href="class_node.html">Node</a>*, <a class="code hl_class" href="class_student.html">Student</a>* student);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_node.html#a38e16ecdfc88111f9c6bdef7c2f7649e">search</a>(<a class="code hl_class" href="class_node.html">Node</a>*, <span class="keywordtype">int</span> upCode);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_node.html#af80f2767476c456295f365e6c38a527d">searchP</a>(<a class="code hl_class" href="class_node.html">Node</a>*, <span class="keywordtype">int</span> upCode);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> show(<a class="code hl_class" href="class_node.html">Node</a>*);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_node.html#a575d7d7fc558659cdbd3c153658ae19c">treeTraversal</a>(<a class="code hl_class" href="class_node.html">Node</a>*, root, <span class="keywordtype">string</span> choice);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif </span><span class="comment">//AED_NODE_H</span></div>
-<div class="ttc" id="aclass_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:11</div></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_node.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_node.html">Node</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>private :</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="class_student.html">Student</a>* student_;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="class_node.html">Node</a>* right_;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="class_node.html">Node</a>* left_;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_class" href="class_node.html">Node</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="class_node.html">Node</a>(<a class="code hl_class" href="class_student.html">Student</a>* student);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_student.html">Student</a>* <a class="code hl_function" href="class_node.html#a9b43e371cfa212684856e9fe9047cd29">getStudent</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="class_node.html">Node</a>* <a class="code hl_function" href="class_node.html#ae7b270f576bb1de89d4a734a3bb46661">getRightBranch</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="class_node.html">Node</a>* <a class="code hl_function" href="class_node.html#afbec42622b37b0491c4b5066f15fabf6">getLeftBranch</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_class" href="class_node.html">Node</a>* <a class="code hl_function" href="class_node.html#a878f2d025bb93529d2c16a1aedbeb0c9">insert</a>(<a class="code hl_class" href="class_node.html">Node</a>*, <a class="code hl_class" href="class_student.html">Student</a>* student);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_node.html#a38e16ecdfc88111f9c6bdef7c2f7649e">search</a>(<a class="code hl_class" href="class_node.html">Node</a>*, <span class="keywordtype">int</span> upCode);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_node.html#af80f2767476c456295f365e6c38a527d">searchP</a>(<a class="code hl_class" href="class_node.html">Node</a>*, <span class="keywordtype">int</span> upCode);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> show(<a class="code hl_class" href="class_node.html">Node</a>*);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_node.html#a575d7d7fc558659cdbd3c153658ae19c">treeTraversal</a>(<a class="code hl_class" href="class_node.html">Node</a>*, root, <span class="keywordtype">string</span> choice);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif </span><span class="comment">//AED_NODE_H</span></div>
+<div class="ttc" id="aclass_node_html"><div class="ttname"><a href="class_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:13</div></div>
 <div class="ttc" id="aclass_node_html_a38e16ecdfc88111f9c6bdef7c2f7649e"><div class="ttname"><a href="class_node.html#a38e16ecdfc88111f9c6bdef7c2f7649e">Node::search</a></div><div class="ttdeci">void search(Node *, int upCode)</div><div class="ttdef"><b>Definition:</b> Node.cpp:19</div></div>
 <div class="ttc" id="aclass_node_html_a575d7d7fc558659cdbd3c153658ae19c"><div class="ttname"><a href="class_node.html#a575d7d7fc558659cdbd3c153658ae19c">Node::treeTraversal</a></div><div class="ttdeci">static int treeTraversal(Node *, root, string choice)</div><div class="ttdef"><b>Definition:</b> Node.cpp:25</div></div>
 <div class="ttc" id="aclass_node_html_a878f2d025bb93529d2c16a1aedbeb0c9"><div class="ttname"><a href="class_node.html#a878f2d025bb93529d2c16a1aedbeb0c9">Node::insert</a></div><div class="ttdeci">Node * insert(Node *, Student *student)</div><div class="ttdef"><b>Definition:</b> Node.cpp:17</div></div>
@@ -116,7 +117,7 @@ $(function() {
 <div class="ttc" id="aclass_node_html_ae7b270f576bb1de89d4a734a3bb46661"><div class="ttname"><a href="class_node.html#ae7b270f576bb1de89d4a734a3bb46661">Node::getRightBranch</a></div><div class="ttdeci">Node * getRightBranch()</div><div class="ttdef"><b>Definition:</b> Node.cpp:13</div></div>
 <div class="ttc" id="aclass_node_html_af80f2767476c456295f365e6c38a527d"><div class="ttname"><a href="class_node.html#af80f2767476c456295f365e6c38a527d">Node::searchP</a></div><div class="ttdeci">void searchP(Node *, int upCode)</div><div class="ttdef"><b>Definition:</b> Node.cpp:21</div></div>
 <div class="ttc" id="aclass_node_html_afbec42622b37b0491c4b5066f15fabf6"><div class="ttname"><a href="class_node.html#afbec42622b37b0491c4b5066f15fabf6">Node::getLeftBranch</a></div><div class="ttdeci">Node * getLeftBranch()</div><div class="ttdef"><b>Definition:</b> Node.cpp:15</div></div>
-<div class="ttc" id="aclass_student_html"><div class="ttname"><a href="class_student.html">Student</a></div><div class="ttdef"><b>Definition:</b> Student.h:14</div></div>
+<div class="ttc" id="aclass_student_html"><div class="ttname"><a href="class_student.html">Student</a></div><div class="ttdef"><b>Definition:</b> Student.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
