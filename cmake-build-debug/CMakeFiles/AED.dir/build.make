@@ -167,6 +167,34 @@ CMakeFiles/AED.dir/aed-project-1/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AED.dir/aed-project-1/Node.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joaofilipeguedes/AED/aed-project-1/Node.cpp -o CMakeFiles/AED.dir/aed-project-1/Node.cpp.s
 
+CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o: CMakeFiles/AED.dir/flags.make
+CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o: ../aed-project-1/GestorHorario.cpp
+CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o: CMakeFiles/AED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joaofilipeguedes/AED/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o -MF CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o.d -o CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o -c /Users/joaofilipeguedes/AED/aed-project-1/GestorHorario.cpp
+
+CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joaofilipeguedes/AED/aed-project-1/GestorHorario.cpp > CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.i
+
+CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joaofilipeguedes/AED/aed-project-1/GestorHorario.cpp -o CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.s
+
+CMakeFiles/AED.dir/aed-project-1/Student.cpp.o: CMakeFiles/AED.dir/flags.make
+CMakeFiles/AED.dir/aed-project-1/Student.cpp.o: ../aed-project-1/Student.cpp
+CMakeFiles/AED.dir/aed-project-1/Student.cpp.o: CMakeFiles/AED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joaofilipeguedes/AED/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/AED.dir/aed-project-1/Student.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AED.dir/aed-project-1/Student.cpp.o -MF CMakeFiles/AED.dir/aed-project-1/Student.cpp.o.d -o CMakeFiles/AED.dir/aed-project-1/Student.cpp.o -c /Users/joaofilipeguedes/AED/aed-project-1/Student.cpp
+
+CMakeFiles/AED.dir/aed-project-1/Student.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AED.dir/aed-project-1/Student.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joaofilipeguedes/AED/aed-project-1/Student.cpp > CMakeFiles/AED.dir/aed-project-1/Student.cpp.i
+
+CMakeFiles/AED.dir/aed-project-1/Student.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AED.dir/aed-project-1/Student.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joaofilipeguedes/AED/aed-project-1/Student.cpp -o CMakeFiles/AED.dir/aed-project-1/Student.cpp.s
+
 # Object files for target AED
 AED_OBJECTS = \
 "CMakeFiles/AED.dir/aed-project-1/Class.cpp.o" \
@@ -175,7 +203,9 @@ AED_OBJECTS = \
 "CMakeFiles/AED.dir/aed-project-1/Timetable.cpp.o" \
 "CMakeFiles/AED.dir/aed-project-1/Reader.cpp.o" \
 "CMakeFiles/AED.dir/aed-project-1/Lecture.cpp.o" \
-"CMakeFiles/AED.dir/aed-project-1/Node.cpp.o"
+"CMakeFiles/AED.dir/aed-project-1/Node.cpp.o" \
+"CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o" \
+"CMakeFiles/AED.dir/aed-project-1/Student.cpp.o"
 
 # External object files for target AED
 AED_EXTERNAL_OBJECTS =
@@ -187,9 +217,11 @@ AED: CMakeFiles/AED.dir/aed-project-1/Timetable.cpp.o
 AED: CMakeFiles/AED.dir/aed-project-1/Reader.cpp.o
 AED: CMakeFiles/AED.dir/aed-project-1/Lecture.cpp.o
 AED: CMakeFiles/AED.dir/aed-project-1/Node.cpp.o
+AED: CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o
+AED: CMakeFiles/AED.dir/aed-project-1/Student.cpp.o
 AED: CMakeFiles/AED.dir/build.make
 AED: CMakeFiles/AED.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/joaofilipeguedes/AED/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable AED"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/joaofilipeguedes/AED/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable AED"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AED.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

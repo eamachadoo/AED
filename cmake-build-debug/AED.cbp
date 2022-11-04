@@ -86,6 +86,12 @@
 		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Class.h">
 			<Option target="AED"/>
 		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/GestorHorario.cpp">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/GestorHorario.h">
+			<Option target="AED"/>
+		</Unit>
 		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Lecture.cpp">
 			<Option target="AED"/>
 		</Unit>
@@ -102,6 +108,12 @@
 			<Option target="AED"/>
 		</Unit>
 		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Reader.h">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Student.cpp">
+			<Option target="AED"/>
+		</Unit>
+		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Student.h">
 			<Option target="AED"/>
 		</Unit>
 		<Unit filename="/Users/joaofilipeguedes/AED/aed-project-1/Timetable.cpp">

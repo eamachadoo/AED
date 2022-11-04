@@ -153,6 +153,30 @@ aed-project-1/Class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Class.cpp.s
 .PHONY : aed-project-1/Class.cpp.s
 
+aed-project-1/GestorHorario.o: aed-project-1/GestorHorario.cpp.o
+.PHONY : aed-project-1/GestorHorario.o
+
+# target to build an object file
+aed-project-1/GestorHorario.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.o
+.PHONY : aed-project-1/GestorHorario.cpp.o
+
+aed-project-1/GestorHorario.i: aed-project-1/GestorHorario.cpp.i
+.PHONY : aed-project-1/GestorHorario.i
+
+# target to preprocess a source file
+aed-project-1/GestorHorario.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.i
+.PHONY : aed-project-1/GestorHorario.cpp.i
+
+aed-project-1/GestorHorario.s: aed-project-1/GestorHorario.cpp.s
+.PHONY : aed-project-1/GestorHorario.s
+
+# target to generate assembly for a file
+aed-project-1/GestorHorario.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/GestorHorario.cpp.s
+.PHONY : aed-project-1/GestorHorario.cpp.s
+
 aed-project-1/Lecture.o: aed-project-1/Lecture.cpp.o
 .PHONY : aed-project-1/Lecture.o
 
@@ -224,6 +248,30 @@ aed-project-1/Reader.s: aed-project-1/Reader.cpp.s
 aed-project-1/Reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Reader.cpp.s
 .PHONY : aed-project-1/Reader.cpp.s
+
+aed-project-1/Student.o: aed-project-1/Student.cpp.o
+.PHONY : aed-project-1/Student.o
+
+# target to build an object file
+aed-project-1/Student.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Student.cpp.o
+.PHONY : aed-project-1/Student.cpp.o
+
+aed-project-1/Student.i: aed-project-1/Student.cpp.i
+.PHONY : aed-project-1/Student.i
+
+# target to preprocess a source file
+aed-project-1/Student.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Student.cpp.i
+.PHONY : aed-project-1/Student.cpp.i
+
+aed-project-1/Student.s: aed-project-1/Student.cpp.s
+.PHONY : aed-project-1/Student.s
+
+# target to generate assembly for a file
+aed-project-1/Student.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AED.dir/build.make CMakeFiles/AED.dir/aed-project-1/Student.cpp.s
+.PHONY : aed-project-1/Student.cpp.s
 
 aed-project-1/Timetable.o: aed-project-1/Timetable.cpp.o
 .PHONY : aed-project-1/Timetable.o
@@ -309,6 +357,9 @@ help:
 	@echo "... aed-project-1/Class.o"
 	@echo "... aed-project-1/Class.i"
 	@echo "... aed-project-1/Class.s"
+	@echo "... aed-project-1/GestorHorario.o"
+	@echo "... aed-project-1/GestorHorario.i"
+	@echo "... aed-project-1/GestorHorario.s"
 	@echo "... aed-project-1/Lecture.o"
 	@echo "... aed-project-1/Lecture.i"
 	@echo "... aed-project-1/Lecture.s"
@@ -318,6 +369,9 @@ help:
 	@echo "... aed-project-1/Reader.o"
 	@echo "... aed-project-1/Reader.i"
 	@echo "... aed-project-1/Reader.s"
+	@echo "... aed-project-1/Student.o"
+	@echo "... aed-project-1/Student.i"
+	@echo "... aed-project-1/Student.s"
 	@echo "... aed-project-1/Timetable.o"
 	@echo "... aed-project-1/Timetable.i"
 	@echo "... aed-project-1/Timetable.s"
