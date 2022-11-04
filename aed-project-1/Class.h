@@ -54,11 +54,11 @@ public:
       */
     string getClassCode() const;
     /**
-    * Getter function: retrieves the value of the the pointer horario,
+     * Getter function: retrieves the value of the the pointer horario,
      * to obtain it's value (time of class).
-    * @brief Complexidade : O(n)
-    * @return Horario da Turma
-    */
+     * @brief Complexidade : O(n)
+     * @return Horario da Turma
+     */
     Timetable* getTimetable();
     /**
      * Getter function: retrieves the value of the list student, obtaining
