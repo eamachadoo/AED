@@ -20,4 +20,6 @@ add_executable(AED
         aed-project-1/Node.cpp
         aed-project-1/Node.h
         aed-project-1/GestorHorario.h
-        aed-project-1/GestorHorario.cpp)
+        aed-project-1/GestorHorario.cpp
+        aed-project-1/Student.cpp
+        aed-project-1/Student.h)
