@@ -21,12 +21,10 @@ private:
 public:
     /**
      * Default Constructor.
-     * @brief Complexidade : O(1)
      */
     Lecture();
     /**
      * Overloaded Constructor.
-     * @brief Complexidade : O(n)
      * @param 1. uc_code
      * @param 2. weekday
      * @param 3. start_hour
@@ -37,42 +35,42 @@ public:
     /**
      * Getter function: retrieves/reads the private string uc_code_,
      * making it available to the program outside of the class.
-     * @brief Complexidade : O(n)
+     * @brief Complexidade : O(1)
      * @return String uc_code_
      */
     string getUcCode();
     /**
      * Getter function: retrieves/reads the private string weekday_,
      * making it available to the program outside of the class.
-     * @brief Complexidade : O(n)
+     * @brief Complexidade : O(1)
      * @return String weekday_
      */
     string getWeekday();
     /**
      * Getter function: retrieves/reads the private float value of start_hour_,
      * making it available to the program outside of the class.
-     * @brief Complexidade : O(n)
+     * @brief Complexidade : O(1)
      * @return Float start_hour
      */
     float getStartHour();
     /**
      * Getter function: retrieves/reads the private float value of duration_,
      * making it available to the program outside of the class.
-     * @brief Complexidade : O(n)
+     * @brief Complexidade : O(1)
      * @return Float duration_
      */
     float getDuration();
     /**
      * Getter function: retrieves/reads the private string type_,
      * making it available to the program outside of the class.
-     * @brief Complexidade : O(n)
+     * @brief Complexidade : O(1)
      * @return String type_
      */
     string getType();
     /**
      * Copy constructor: function that initializes an object using
      * another object of the same class.
-     * @brief Complexidade : O(n)
+     * @brief Complexidade : O(1)
      * @param 1. l
      */
     Lecture(Lecture const &l); //copy constructor

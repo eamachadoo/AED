@@ -18,32 +18,32 @@ private :
 
 public:
     /**
-     *
+     * Default Constructor.
      */
     Node();
     /**
-     *
-     * @param student
+     * Overloaded Constructor.
+     * @param 1. student
      */
     explicit Node(Student* student);
     /**
-     *
+     * Getter Function:
      * @return
      */
     Student* getStudent();
     /**
-     *
+     * Getter Function:
      * @return
      */
     Node* getRightBranch();
     /**
-     *
+     * Getter Function:
      * @return
      */
     Node* getLeftBranch();
     /**
      *
-     * @param student
+     * @param 1. student
      * @return
      */
     Node* insert(Node*, Student* student);
