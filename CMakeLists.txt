@@ -13,13 +13,9 @@ add_executable(AED
         aed-project-1/UC.h
         aed-project-1/Timetable.cpp
         aed-project-1/Timetable.h
-        aed-project-1/Reader.cpp
-        aed-project-1/Reader.h
         aed-project-1/Lecture.cpp
         aed-project-1/Lecture.h
         aed-project-1/Node.cpp
         aed-project-1/Node.h
-        aed-project-1/GestorHorario.h
-        aed-project-1/GestorHorario.cpp
         aed-project-1/Student.cpp
         aed-project-1/Student.h)

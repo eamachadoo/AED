@@ -15,10 +15,6 @@ UC::UC(string uc_code, string name, float ects) : uc_code_(std::move(uc_code)), 
 UC::UC(string uc_code, string name, float ects, vector<Class*> uc_classes) :
 uc_code_(std::move(uc_code)), name_(std::move(name)), ects_(ects), uc_classes_(std::move(uc_classes)) {}
 
-UC::UC(string uc_code, vector<Class*> uc_classes, int numStudents) : uc_code_(uc_code), uc_classes_(uc_classes), numStudents_(numStudents){}
-
-int UC::getNumStudent() {return numStudents_;}
-
 float UC::getCredits() const {return ects_;}
 
 void UC::setCredits(float ects) {
@@ -42,3 +38,13 @@ vector<Class *> UC::getUcClasses() {return uc_classes_;}
 void UC::setUcClasses(std::vector<Class*> v)  {
     this ->uc_classes_ = std::move(v);
 }
+
+UC::UC(string uc_code, vector<Class*> uc_classes, int numStudents) : uc_code_(std::move(uc_code)), uc_classes_(std::move(uc_classes)), numStudents_(numStudents){}
+
+int UC::getNumStudent() {return numStudents_;}
+
+void UC::addStudent() {
+    numStudents_++;
+}
+
+UC::UC(string uc_code, string class_code) : uc_code_(std::move(uc_code)), class_code_(std::move(class_code)){}

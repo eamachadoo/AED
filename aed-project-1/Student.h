@@ -29,6 +29,10 @@ public:
     * @param 2. name
     */
     Student(int upCode, string name);
+
+    Student(int upCode);
+
+    Student(string name);
     /**
      * Overloaded Constructor.
      * @brief Complexidade : O(n)
@@ -52,7 +56,7 @@ public:
      * @brief Complexidade : O(n)
      * @return String Variable (name_)
      */
-    string getStudentName() const;
+    string getStudentName(const string& name) const;
     /**
      * Getter Function: retrieves the value of the pointer lectures;
      * which provides the time of the class, and allows the outside
@@ -61,6 +65,7 @@ public:
      * @return Vector (horarioEstudante_)
      */
     Timetable* getStudentTimetable();
+
 };
 
 #endif //AED_STUDENT_H

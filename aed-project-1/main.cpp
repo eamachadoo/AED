@@ -1,9 +1,9 @@
 #include <iostream>
-#include "GestorHorario.h"
-
+#include "GestorHorarios.h"
 
 using namespace std;
 
 int main() {
-    return 0;
+
+
 }

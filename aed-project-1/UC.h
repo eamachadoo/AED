@@ -13,6 +13,7 @@ using namespace std;
 class UC {
 
 private:
+    string class_code_;
     string uc_code_;
     float ects_;
     vector<Class*> uc_classes_;
@@ -25,6 +26,7 @@ public:
      * @brief Complexidade : O(1)
      */
     UC();
+    UC(string uc_code, string class_code);
     /**
      * Overloaded Constructor.
      * @brief Complexidade : O(n)
@@ -101,6 +103,7 @@ public:
      * @param c
      */
     void addUcClass(Class* c);
+    void addStudent();
 
 };
 

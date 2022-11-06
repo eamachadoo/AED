@@ -15,6 +15,10 @@ Student::Student(int upCode, std::string name, Timetable *horario) : upCode_(upC
 
 int Student::getStudentCode() const {return upCode_;}
 
-string Student::getStudentName() const {return name_;}
+string Student::getStudentName(const string& name) const {return name_;}
 
 Timetable *Student::getStudentTimetable() {return horarioEstudante_;}
+
+Student::Student(int upCode) : upCode_(upCode){}
+
+Student::Student(string name) : name_(std::move(name)) {}
