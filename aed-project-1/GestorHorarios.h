@@ -34,9 +34,10 @@ public:
      */
     void setUCs();
     /**
-     * This function builds the vector horarios_leic by using a for-loop
-     * and the emplace_back, which inserts
-     * @brief Complexidade: O(...)
+     * This function builds the vector horarios_leic by using a for-loop,
+     * it builds the 47 classes distributed through the 3 years, and it
+     * separates them by year.
+     * @brief Complexidade: O(1)
      */
     void buildClasses();
     /**
@@ -49,23 +50,35 @@ public:
     /**
      * Getter Function: retrieves the private vector horarios_leic making it
      * available outside the class.
+     * @brief Complexidade: O(1)
      * @return Vector horarios_leic
      */
     vector<Timetable*> getClassLectures();
     /**
-     *
+     * This function, the same as the buildClasses, builds the timetable
+     * for each class - it uses a while loop [O(n)] and two for-loops
+     * [O(n^2)].
+     * @brief Complexidade: O(n^3)
      */
     void buildTimetable();
     /**
-     *
+     * This function loops through the classes_per_uc.csv file and
+     * reads the classes per UC, while also creating empty lists
+     * for its classes.
+     * @brief Complexidade: O(n^2)
      */
     void readClassesPerUC();
     /**
-     *
+     * This function loops through the students_classes.csv file and
+     * reads the students name, while creating empty student lists.
+     * @brief Complexidade: O(n^2)
      */
     void readStudents();
     /**
-     *
+     * The Menu function serves the purpose of a menu. It allows the user to
+     * input the credentials he desires to use between the available options to
+     * choose from.
+     * @brief Complexidade: O(n)
      */
     void Menu();
 

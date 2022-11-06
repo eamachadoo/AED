@@ -27,33 +27,36 @@ public:
      */
     explicit Node(Student* student);
     /**
-     * Getter Function:
-     * @return
+     * Getter Function: retrieves the value of student, making
+     * it available outside the function.
+     * @brief Complexidade: O(1)
+     * @return Student *student_
      */
     Student* getStudent();
     /**
-     * Getter Function:
-     * @return
+     * Getter Function: retrieves the value of right_,
+     * making it available outside the function.
+     * @brief Complexidade: O(1)
+     * @return Node *right_
      */
     Node* getRightBranch();
     /**
-     * Getter Function:
-     * @return
+     * Getter Function: retrieves the value of left_,
+     * making it available outside the function.
+     * @brief Complexidade: O(1)
+     * @return Node *left_
      */
     Node* getLeftBranch();
     /**
-     *
      * @param 1. student
      * @return
      */
     Node* insert(Node*, Student* student);
     /**
-     *
      * @param upCode
      */
     void search(Node*, int upCode);
     /**
-     *
      * @param upCode
      */
     void searchP(Node*, int upCode);
