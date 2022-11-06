@@ -12,11 +12,10 @@
 
 class GestorHorarios {
 private:
-    vector<Student> student;
-    vector<Lecture> lecture;
-    //vector<Timetable*> horario_estudante;
+    vector<Student*> student;
+    vector<Lecture*> lecture;
+    vector<Timetable*> horario_estudante_;
     vector<UC*> UCs; //criar timetable (pointers necessários)
-    vector<UC> ucs; //ler
 
     vector<Class*> classes_leic;
 
@@ -24,7 +23,7 @@ private:
 
 public:
     GestorHorarios();
-    void getUCs();
+    void setUCs();
     void buildClasses();
     vector<Class*> getClasses();
     vector<Timetable*> getClassLectures();
@@ -34,9 +33,9 @@ public:
     void buildTimetable();
 
     void readClassesPerUC();
-    static void readStudents();
+    void readStudents();
 
-    static void Menu();
+    void Menu();
 
 };
 

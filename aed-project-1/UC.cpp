@@ -39,12 +39,4 @@ void UC::setUcClasses(std::vector<Class*> v)  {
     this ->uc_classes_ = std::move(v);
 }
 
-UC::UC(string uc_code, vector<Class*> uc_classes, int numStudents) : uc_code_(std::move(uc_code)), uc_classes_(std::move(uc_classes)), numStudents_(numStudents){}
-
-int UC::getNumStudent() {return numStudents_;}
-
-void UC::addStudent() {
-    numStudents_++;
-}
-
 UC::UC(string uc_code, string class_code) : uc_code_(std::move(uc_code)), class_code_(std::move(class_code)){}

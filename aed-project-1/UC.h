@@ -18,7 +18,6 @@ private:
     float ects_;
     vector<Class*> uc_classes_;
     string name_;
-    int numStudents_;
 
 public:
     /**
@@ -50,7 +49,6 @@ public:
      * @brief Complexidade : O(n)
      * @return
      */
-     UC(string uc_code, vector<Class*> uc_classes, int numStudents);
 
      string getCode();
     /**

@@ -10,6 +10,25 @@
 
 GestorHorarios::GestorHorarios() = default;
 
+void GestorHorarios::setUCs() {
+    UCs.emplace_back(new UC("L.EIC001","ALGA",4.5));
+    UCs.emplace_back(new UC("L.EIC002","AM1",6));
+    UCs.emplace_back(new UC("L.EIC003","FP",6));
+    UCs.emplace_back(new UC("L.EIC004","FSC",6));
+    UCs.emplace_back(new UC("L.EIC005","MD",6));
+    UCs.emplace_back(new UC("L.EIC011","AED",6));
+    UCs.emplace_back(new UC("L.EIC012","BD",6));
+    UCs.emplace_back(new UC("L.EIC013","F2",4.5));
+    UCs.emplace_back(new UC("L.EIC014","SO",6));
+    UCs.emplace_back(new UC("L.EIC015","LDTS",6));
+    UCs.emplace_back(new UC("L.EIC021","FSI",6));
+    UCs.emplace_back(new UC("L.EIC022","IPC",4.5));
+    UCs.emplace_back(new UC("L.EIC023","LBAW",6));
+    UCs.emplace_back(new UC("L.EIC024","PFL",6));
+    UCs.emplace_back(new UC("L.EIC0025","RC",6));
+
+}
+
 void GestorHorarios::buildClasses() {
     string class_code;
     for(int i = 0; i <= 47; i++){
@@ -83,9 +102,11 @@ void GestorHorarios::readClassesPerUC(){
             getline(str,uc_code,',');
             getline(str,class_code,'\r');
 
-            UC uc = UC(uc_code,class_code);
-
-            ucs.push_back(uc);
+            for(auto uc : UCs){
+                if(uc->getCode() == uc_code){
+                    uc->addUcClass(new Class(class_code, new Timetable(), {}));
+                }
+            }
         }
     }
 }
@@ -98,58 +119,61 @@ void GestorHorarios::readStudents() {
     while (getline(in, line)) {
         string StudentCode, StudentName, UcCode, Class;
         stringstream input(line);
-        int StudentID;
 
         getline(input, StudentCode);
         getline(input, StudentName);
         getline(input, UcCode);
         getline(input, Class);
 
-        StudentID = stoi(StudentCode);
-        UC currentUC = UC(UcCode, Class);
+        Student* estudante = new Student(stof(StudentCode),StudentName);
 
-
+    for (auto uc : UCs){
+        if(uc->getCode() == UcCode){
+            for (auto c : uc->getUcClasses()){
+                if(c->getClassCode() == Class){
+                    c->getStudentList().emplace_back(estudante);
+                }
+            }
+        }
+    }
     }
 }
 
-vector<Timetable> GestorHorarios::horario_estudante(int upCode) {
-    Student estudante;
-    vector<Timetable> horario_estudante;
+void GestorHorarios::Menu() {
+    bool loop = true;
+    while (loop) {
+        cout << "-------------------------" << endl;
+        cout << " GESTOR DE HORARIOS LEIC" << endl;
+        cout << "-------------------------" << endl;
+        cout << endl;
+        cout << "\tMenu Principal\n";
+        cout << "(1) Ocupação de turmas/UC/ano" << endl;
+        cout << "(2) Horário de aluno" << endl;
+        cout << "(3) Estudantes em determinada turma/UC/ano" << endl;
+        cout << "(0) Sair";
+        cout << "->";
 
-    for(const Student& student : students){
-        if(student.getStudentCode() == upCode)
-    }
-}
+        vector<int> inputs = {0, 1, 2, 3};
+        char input;
+        cin >> input;
 
-void GestorHorarios::Menu(){
-    cout << "-------------------------" << endl;
-    cout << " GESTOR DE HORARIOS LEIC" << endl;
-    cout << "-------------------------" << endl;
-    cout << endl;
-    cout << "\tMenu Principal\n";
-    cout << "(1) Ocupação de turmas/UC/ano" << endl;
-    cout << "(2) Horário de aluno" << endl;
-    cout << "(3) Estudantes em determinada turma/UC/ano" << endl;
-    cout << "(0) Sair";
-    cout << "->";
+        switch (input) {
+            case '1':
+                string input2;
+                cin >> input2;
 
-    vector<int> inputs = {0, 1, 2, 3};
-    int input;
-    cin >> input;
-
-    switch (input) {
-        case 1:
-
-            break;
-        case 2:
-
-            break;
-        case 3:
-
-            break;
-        case 0:
-            exit(0);
-        default:
-            break;
+                break;
+            case '2':
+                cout << "coco" << endl;
+                break;
+            case '3':
+                cout << "pp" << endl;
+                break;
+            case '0':
+                loop = false;
+                break;
+            default:
+                break;
+        }
     }
 }
