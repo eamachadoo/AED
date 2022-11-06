@@ -247,17 +247,6 @@ void GestorHorarios::Menu() {
                 cout << "(1) Turma" << endl;
                 cout << "(2) UC" << endl;
                 cout << "(3) Ano" << endl;
-                int inputc3;
-                cin >> inputc3;
-                if(inputc3==1){
-
-                }
-                if(inputc3==2){
-
-                }
-                if(inputc3==3){
-
-                }
 
                 break;
             case 0:
