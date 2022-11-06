@@ -139,9 +139,9 @@ void GestorHorarios::readStudents() {
     }
 }
 
-void
 
 void GestorHorarios::Menu() {
+
     bool loop = true;
     while (loop) {
         cout << "-------------------------" << endl;
@@ -167,24 +167,104 @@ void GestorHorarios::Menu() {
                 int input2;
                 cin >> input2;
                 if (input2==1){
-
+                    cout << "Codigo turma :" << endl;
+                    string input3;
+                    cin >> input3;
+                    for(auto uc: UCs){
+                        if(uc->getCode()==input3){
+                            for(auto c: uc->getUcClasses()){
+                                if(c->getClassCode()==input3) {
+                                    cout << c->getStudentList().size() << endl;
+                                }
+                            }
+                        }
+                    }
+                    loop = false;
                 }
                 if (input2==2){
+                    cout << "Codigo UC :" << endl;
+                    string input4;
+                    cin >> input4;
+                    for(auto uc: UCs){
+                        if(uc->getCode()==input4){
+                            for(auto c: uc->getUcClasses()){
+                                cout << c->getStudentList().size() << endl;
 
-                }
-                if(input2 == 3)
+                            }
+                        }
+                    }
                     loop = false;
+                }
+                if(input2 == 3){
+                    cout << "Ano :" << endl;
+                    string input5;
+                    cin >> input5;
+                    int temp = 0;
+                    if(input5=="1") {
+                        for (auto uc: UCs) {
+                            if (uc->getName() == "ALGA" || uc->getName() == "AM1" || uc->getName() == "FSC" ||
+                                uc->getName() == "FP" || uc->getName() == "MD") {
+                                for (auto c: uc->getUcClasses()) {
+                                    temp += c->getStudentList().size();
+                                }
+                            }
+                        }
+                        cout << temp << endl;
+                    }
+                    if(input5=="2"){
+                        for (auto uc: UCs) {
+                            if (uc->getName() == "AED" || uc->getName() == "BD" || uc->getName() == "F2" ||
+                                uc->getName() == "SO"|| uc->getName() == "LDTS") {
+                                for (auto c: uc->getUcClasses()) {
+                                    temp += c->getStudentList().size();
+                                }
+                            }
+                        }
+                        cout << temp << endl;
+                    }
+                    if(input5=="3"){
+                    for (auto uc: UCs) {
+                        if (uc->getName() == "FSI" || uc->getName() == "IPC" || uc->getName() == "LBAW" ||
+                            uc->getName() == "PFL"|| uc->getName() == "RC") {
+                            for (auto c: uc->getUcClasses()) {
+                                temp += c->getStudentList().size();
+                            }
+                        }
+                    }
+                    cout << temp << endl;
+                }
+                    loop=false;
+                }
+                loop = false;
                 break;
             case 2:
-                cout << "coco" << endl;
+                cout << "Numero de aluno : " << endl;
+                //string inputS;
+                //cin >> inputS;
+
                 break;
             case 3:
-                cout << "pp" << endl;
+                cout << "(1) Turma" << endl;
+                cout << "(2) UC" << endl;
+                cout << "(3) Ano" << endl;
+                int inputc3;
+                cin >> inputc3;
+                if(inputc3==1){
+
+                }
+                if(inputc3==2){
+
+                }
+                if(inputc3==3){
+
+                }
+
                 break;
             case 0:
                 loop = false;
                 break;
             default:
+
                 break;
         }
     }
